@@ -1,0 +1,26 @@
+"Games"
+{
+	"nmrih"
+	{
+		"Signatures"
+		{
+			"CNMRiH_GameRules::RespawnDeadPlayers"
+			{
+				"library"		"server"
+				"windows"		"\xA1\x2A\x2A\x2A\x2A\x83\x78\x30\x00\x74\x2A\xA1\x2A\x2A\x2A\x2A\x83\x78\x30\x00\x0F\x84"
+				"linux"			"@_ZN16CNMRiH_GameRules14RespawnPlayersEv"
+			}
+		}
+
+		"Functions"
+        {
+            "CNMRiH_GameRules::RespawnDeadPlayers"
+            {
+                "signature"  "CNMRiH_GameRules::RespawnDeadPlayers"
+                "callconv"  "thiscall"
+                "return"  "void"
+                "this"  "ignore"
+            }
+        }
+	}
+}
