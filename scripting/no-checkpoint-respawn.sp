@@ -14,7 +14,7 @@ public Plugin myinfo = {
     author      = "Dysphie",
     description = "Toggle player respawning at checkpoints",
     version     = "1.0.2",
-    url         = ""
+    url         = "https://github.com/dysphie/nmrih-no-checkpoint-respawning"
 };
 
 enum DetourMode
@@ -35,12 +35,12 @@ public void OnPluginStart()
     canRespawn = CreateConVar("sm_allow_checkpoint_respawning", "0", "Allow players to respawn at checkpoints");
 }
 
-public MRESReturn OnRespawnDeadPlayers()
+MRESReturn OnRespawnDeadPlayers()
 {
     return canRespawn.BoolValue ? MRES_Ignored : MRES_Supercede;
 }
 
-stock Handle RegDetour(Handle gameconf, const char[] name, DHookCallback callback, DetourMode mode = DetourMode_Post)
+Handle RegDetour(Handle gameconf, const char[] name, DHookCallback callback, DetourMode mode = DetourMode_Post)
 {
     Handle hDetour = DHookCreateFromConf(gameconf, name);
     if (!hDetour)
