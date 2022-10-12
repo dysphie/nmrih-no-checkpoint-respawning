@@ -13,14 +13,14 @@
 		}
 
 		"Functions"
-        {
-            "CNMRiH_GameRules::RespawnDeadPlayers"
-            {
-                "signature"  "CNMRiH_GameRules::RespawnDeadPlayers"
-                "callconv"  "thiscall"
-                "return"  "void"
-                "this"  "ignore"
-            }
-        }
+		{
+			"CNMRiH_GameRules::RespawnDeadPlayers"
+			{
+				"signature"  "CNMRiH_GameRules::RespawnDeadPlayers"
+				"callconv"  "thiscall"
+				"return"  "void"
+				"this"  "ignore"
+			}
+		}
 	}
 }
